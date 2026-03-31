@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.board-container {
+    position: relative;
+    width: 80vmin;
+    height: 80vmin;
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 2px solid #555;
+    background-color: #555; 
+    gap: 1px; 
+}
+
+.board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vmin;
+    color: #111;
+}
+
+
+.white {
+    background-color: #ffffff;
+}
+
+.blue {
+    background-color: pink; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+
+.ladder-rail {
+    stroke: #d7aa7e;
+    stroke-width: 0.8;
+    stroke-linecap: round;
+}
+
+.ladder-rung {
+    stroke: #d7aa7e;
+    stroke-width: 3.5;
+    stroke-dasharray: 0.5 3;
+}
+
+
+.snake-body {
+    fill: none;
+    stroke:rebeccapurple;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.snake-head {
+    fill: rebeccapurple;
+}
+
+.snake-eye {
+    fill: #111;
+}
